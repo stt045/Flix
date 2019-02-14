@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MoveisViewController.swift
 //  Flix
 //
 //  Created by Steven Tran on 2/12/19.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MoviesViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    
 }
 
