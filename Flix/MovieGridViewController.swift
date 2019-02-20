@@ -17,9 +17,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        collectionView.register(MovieGridCell.self, forCellWithReuseIdentifier: "MovieGridCell")
-        */
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -37,7 +35,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
                 // Reload data after retrieving it
                 self.collectionView.reloadData()
                 
-                
                 print(self.movies)
                 
             }
@@ -53,6 +50,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
         
         let movie = movies[indexPath.item]
+        
         let baseURL = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         let posterURL = URL(string: baseURL + posterPath)
