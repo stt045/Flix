@@ -61,6 +61,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let overview = movie["overview"] as! String
         
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 50
+        
         cell.titleLabel!.text = title
         cell.synopsisLabel.text = overview
         

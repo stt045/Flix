@@ -24,7 +24,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="159" id="B2b-HD-hyY" customClass="MovieCell" customModule="Flix">
                                         <rect key="frame" x="0.0" y="28" width="375" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B2b-HD-hyY" id="EQX-oh-5LH">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B2b-HD-hyY" id="EQX-oh-5LH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="158.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -56,7 +56,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="mLS-mY-sya" firstAttribute="leading" secondItem="jLW-kj-6aP" secondAttribute="trailing" constant="8" id="HQf-kU-RBB"/>
-                                                <constraint firstAttribute="bottom" secondItem="3fQ-2s-6pl" secondAttribute="bottom" id="JX5-9s-ZfP"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3fQ-2s-6pl" secondAttribute="bottom" id="JX5-9s-ZfP"/>
                                                 <constraint firstItem="mLS-mY-sya" firstAttribute="top" secondItem="EQX-oh-5LH" secondAttribute="top" constant="8" id="SSo-w8-NUz"/>
                                                 <constraint firstItem="3fQ-2s-6pl" firstAttribute="leading" secondItem="jLW-kj-6aP" secondAttribute="trailing" constant="8" id="Tsw-Ob-9az"/>
                                                 <constraint firstItem="mLS-mY-sya" firstAttribute="leading" secondItem="jLW-kj-6aP" secondAttribute="trailing" constant="8" id="UhN-iT-W9Y"/>
@@ -66,7 +66,7 @@
                                                 <constraint firstItem="jLW-kj-6aP" firstAttribute="top" secondItem="EQX-oh-5LH" secondAttribute="top" constant="8" id="eqV-ZB-Twz"/>
                                                 <constraint firstItem="3fQ-2s-6pl" firstAttribute="trailing" secondItem="EQX-oh-5LH" secondAttribute="trailingMargin" constant="8" id="ghW-A2-hUt"/>
                                                 <constraint firstItem="jLW-kj-6aP" firstAttribute="leading" secondItem="EQX-oh-5LH" secondAttribute="leading" constant="8" id="heq-U0-T4W"/>
-                                                <constraint firstAttribute="bottom" secondItem="jLW-kj-6aP" secondAttribute="bottom" constant="8" id="i84-cA-AZv"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jLW-kj-6aP" secondAttribute="bottom" constant="8" id="i84-cA-AZv"/>
                                                 <constraint firstItem="jLW-kj-6aP" firstAttribute="top" secondItem="EQX-oh-5LH" secondAttribute="top" constant="8" id="rjI-bC-E8m"/>
                                             </constraints>
                                         </tableViewCellContentView>
